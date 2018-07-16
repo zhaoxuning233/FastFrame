@@ -8,7 +8,6 @@ import com.huijin.latte.delegates.LatteDelegate;
 
 /**
  * Created by 赵旭宁 on 2018/7/8.
- * 修改注释
  */
 
 public class ExampleDelegate extends LatteDelegate {
