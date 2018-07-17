@@ -7,6 +7,7 @@ import com.donghuang.latte.net.callback.IFailure;
 import com.donghuang.latte.net.callback.IRequest;
 import com.donghuang.latte.net.callback.ISuccess;
 import com.donghuang.latte.net.callback.RequestCallbacks;
+import com.donghuang.latte.net.download.DownloadHandler;
 import com.donghuang.latte.ui.LatteLoader;
 import com.donghuang.latte.ui.LoaderCreator;
 import com.donghuang.latte.ui.LoaderStyle;
@@ -28,6 +29,9 @@ import retrofit2.Callback;
 public class RestClient {
     private final String URL;
     private final WeakHashMap<String, Object> PARAMS = RestCreater.getParams();
+    private final String DOWNLOAD_DIR;
+    private final String EXTENSION;
+    private final String NAME;
     private final IRequest REQUEST;
     private final ISuccess SUCCESS;
     private final IError ERROR;
@@ -39,6 +43,9 @@ public class RestClient {
 
     public RestClient(String url,
                       Map<String, Object> params,
+                      String downloadDir,
+                      String extension,
+                      String name,
                       IRequest request,
                       ISuccess success,
                       IError error,
@@ -49,6 +56,9 @@ public class RestClient {
                       File file) {
         URL = url;
         PARAMS.putAll(params);
+        DOWNLOAD_DIR = downloadDir;
+        EXTENSION = extension;
+        NAME = name;
         REQUEST = request;
         SUCCESS = success;
         ERROR = error;
@@ -139,5 +149,13 @@ public class RestClient {
 
     public final void delete() {
         request(HttpMethod.DELETE);
+    }
+
+    public final void upload() {
+        request(HttpMethod.UPLOAD);
+    }
+
+    public final void download() {
+        new DownloadHandler(URL, DOWNLOAD_DIR, EXTENSION, NAME, REQUEST, SUCCESS, ERROR, FAILURE).handlerDownload();
     }
 }

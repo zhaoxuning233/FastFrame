@@ -1,4 +1,4 @@
-package com.donghuang.latte.util;
+package com.donghuang.latte.util.dimen;
 
 
 import android.content.res.Resources;
