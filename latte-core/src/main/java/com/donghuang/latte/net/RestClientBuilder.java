@@ -6,7 +6,7 @@ import com.donghuang.latte.net.callback.IError;
 import com.donghuang.latte.net.callback.IFailure;
 import com.donghuang.latte.net.callback.IRequest;
 import com.donghuang.latte.net.callback.ISuccess;
-import com.donghuang.latte.ui.LoaderStyle;
+import com.donghuang.latte.ui.loader.LoaderStyle;
 
 import java.io.File;
 import java.util.Map;

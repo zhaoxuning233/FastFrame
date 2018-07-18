@@ -1,4 +1,4 @@
-package com.donghuang.latte.ui;
+package com.donghuang.latte.ui.loader;
 
 /**
  * Created by 赵旭宁 on 2018/7/17.

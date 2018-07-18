@@ -2,7 +2,6 @@ package com.donghuang.festec.example;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -11,7 +10,6 @@ import com.donghuang.latte.net.RestClient;
 import com.donghuang.latte.net.callback.IError;
 import com.donghuang.latte.net.callback.IFailure;
 import com.donghuang.latte.net.callback.ISuccess;
-import com.donghuang.latte.ui.LoaderStyle;
 
 /**
  * Created by 赵旭宁 on 2018/7/8.

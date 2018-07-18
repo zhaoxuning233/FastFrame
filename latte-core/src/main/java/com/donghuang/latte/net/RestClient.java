@@ -8,9 +8,8 @@ import com.donghuang.latte.net.callback.IRequest;
 import com.donghuang.latte.net.callback.ISuccess;
 import com.donghuang.latte.net.callback.RequestCallbacks;
 import com.donghuang.latte.net.download.DownloadHandler;
-import com.donghuang.latte.ui.LatteLoader;
-import com.donghuang.latte.ui.LoaderCreator;
-import com.donghuang.latte.ui.LoaderStyle;
+import com.donghuang.latte.ui.loader.LatteLoader;
+import com.donghuang.latte.ui.loader.LoaderStyle;
 
 import java.io.File;
 import java.util.Map;

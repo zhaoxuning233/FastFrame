@@ -1,4 +1,4 @@
-package com.donghuang.latte.ui;
+package com.donghuang.latte.ui.loader;
 
 import android.content.Context;
 

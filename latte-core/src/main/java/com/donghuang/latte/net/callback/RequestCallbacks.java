@@ -2,9 +2,8 @@ package com.donghuang.latte.net.callback;
 
 import android.os.Handler;
 
-import com.donghuang.latte.app.Latte;
-import com.donghuang.latte.ui.LatteLoader;
-import com.donghuang.latte.ui.LoaderStyle;
+import com.donghuang.latte.ui.loader.LatteLoader;
+import com.donghuang.latte.ui.loader.LoaderStyle;
 
 import retrofit2.Call;
 import retrofit2.Callback;
