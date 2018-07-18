@@ -5,7 +5,7 @@ package com.donghuang.latte.app;
  */
 
 @SuppressWarnings("unused")
-public enum ConfigType {
+public enum ConfigKeys {
     API_HOST,
     APPLICATION_CONTEXT,
     CONFIG_READY,
